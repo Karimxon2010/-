@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./room.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.cards {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.card {
+    position: fixed;
+
+    right: 0;
+    top: 0;
+}
+
+.cards img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    animation-name: koptokAnime;
+    animation-duration: 3s;
+    position: relative;
+    z-index: 1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: url(./room.png);
+}
+
+.card img {
+    background: url(./room.png);
+    border-radius: 35%;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: 5;
+}
+
+@keyframes koptokAnime {
+    0% {
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 1325px;
+        top: -675px;
+        bottom: 0;
+    }
+
+    50% {
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+
+    75% {
+        right: 0px;
+        bottom: 0px;
+        left: 1325px;
+    }
+
+    100% {
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        top: 0;
+    }
+}
+
+
+/* .card_wrapper {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: darkgrey;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card_wrapper .card {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    padding: 25px 15px;
+    text-transform: uppercase;
+    animation-name: cardAnime;
+    animation-duration: 3s;
+    margin: 150px 0;
+    animation-fill-mode: forwards;
+}
+
+.card_wrapper .cards {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    padding: 25px 15px;
+    text-transform: uppercase;
+    animation-name: cardsAnime;
+    animation-duration: 3s;
+    margin: 150px 0;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes cardAnime {
+    0% {
+        left: 0;
+        background-color: white;
+        opacity: 0;
+    }
+
+    100% {
+        left: 300px;
+        background-color: wheat;
+    }
+}
+
+@keyframes cardsAnime {
+    0% {
+        right: 0;
+        background-color: white;
+        opacity: 0;
+    }
+
+    100% {
+        right: 300px;
+        background-color: wheat;
+    }
+}
+
+
+
+.four {
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.four .tort {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    animation-name: tortAnime;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes tortAnime {
+    0%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+
+    25%{
+        top: 0;
+        left: 400px;
+        background-color: darkcyan;
+    }
+
+    50%{
+        left: 400px;
+        top: 400px;
+        background-color: aqua;
+    }
+
+    75%{
+        top: 400px;
+        left: 0;
+        background-color: aquamarine;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+}
+
+.four .cards {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 0 200px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: glassAnime;
+    animation-duration: 1s;
+}
+
+@keyframes glassAnime {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+} */
